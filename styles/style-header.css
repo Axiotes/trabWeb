@@ -6,6 +6,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .image-header{
@@ -13,7 +14,7 @@
     margin-left: 40px;
 }
 
-.navegacao{
+.menu-desktop{
     margin-right: 40px;
     display: flex;
     gap: 40px;
@@ -40,4 +41,48 @@
     padding: 10px;
     background-color: #2D3250;
     border-radius: 30px;
+}
+
+.container-header-desktop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-menu-mobile    {
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.opcao-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .menu-desktop{
+        display: none;
+    }
+
+    .mobile-menu-icon{
+        width: 100%;
+    }
+
+    .btn-menu-mobile{
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+
+    .menu-mobile .opcao-mobile{
+        display: block;
+    }
+
+    .abrir-menu{
+        display: block;
+    }
 }
