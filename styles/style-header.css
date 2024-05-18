@@ -47,13 +47,14 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.btn-menu-mobile    {
+.btn-menu-mobile{
     display: none;
 }
 
-.mobile-menu{
+.menu-mobile{
     display: none;
 }
 
@@ -78,11 +79,13 @@
         margin-right: 30px;
     }
 
-    .menu-mobile .opcao-mobile{
+    .opcao-mobile{
         display: block;
-    }
+        position: absolute;
+        right: 0;
+        margin: 20px 30px 0 0;
+        height: 130px;
 
-    .abrir-menu{
-        display: block;
+        background-color: red;
     }
 }

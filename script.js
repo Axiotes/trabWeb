@@ -1,11 +1,11 @@
 function menuMobile() {
-    let menu = document.querySelector('.mobile-menu');
+    let menu = document.getElementById('menu-mobile');
 
     console.log(menu)
 
-    if (menu.classList.contains('abrir-menu')) {
-        menu.classList.remove('abrir-menu')
+    if (menu.style.display === 'none') {
+        menu.style.display = "block";
     } else {
-        menu.classList.add('abrir-menu')
+        menu.style.display = "none";
     }
 }
