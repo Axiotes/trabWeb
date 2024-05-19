@@ -3,9 +3,9 @@ function menuMobile() {
 
     console.log(menu)
 
-    if (menu.style.display === 'none') {
-        menu.style.display = "block";
+    if (menu.style.transform === 'scale(0)') {
+        menu.style.transform = "scale(1)";
     } else {
-        menu.style.display = "none";
+        menu.style.transform = "scale(0)";
     }
 }

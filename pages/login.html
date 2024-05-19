@@ -11,14 +11,26 @@
 </head>
 <body>
     <header class="header">
-        <figure>
-            <img src="/images/image-header.png" class="image-header">
-        </figure>
+        <div class="container-header-desktop">
+            <figure>
+                <img src="/images/image-header.png" class="image-header">
+            </figure>
 
-        <nav class="navegacao">
-            <a href="index.html" class="opcoes">Apresentação</a>
-            <a href="galeria-de-imagens.html" class="opcoes">Galeria de imagens</a>
-            <a id="opcao-selecionada" class="opcoes">Entrar</a>
+            <nav class="menu-desktop">
+                <a href="/pages/index.html" class="opcoes">Apresentação</a>
+                <a href="/pages/galeria-de-imagens.html" class="opcoes">Galeria de imagens</a>
+                <a id="opcao-selecionada" class="opcoes">Entrar</a>
+            </nav>
+        
+            <button class="btn-menu-mobile" onclick="menuMobile()">
+                <img src="/images/menu-header.png">
+            </button>
+        </div>
+        
+        <nav id="menu-mobile" style="transform: scale(0);" class="container-opcao-mobile">
+            <a href="/pages/index.html" class="opcoes-mobile">Apresentação</a>
+            <a href="/pages/galeria-de-imagens.html" class="opcoes-mobile">Galeria de imagens</a>
+            <a id="opcao-selecionada-mobile" class="opcoes-mobile">Entrar</a>
         </nav>
     </header>
 
