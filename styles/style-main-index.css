@@ -32,7 +32,6 @@
     overflow-y: scroll;
     gap: 50px;
     margin: 0 30px 0 30px;
-    padding: 0 50px 0 30px 0;
 }
 
 .carrossel::-webkit-scrollbar{
@@ -100,5 +99,33 @@
         position: relative;
         font-size: 32px;
         top: 90px;
+    }
+
+    .carrossel{
+        gap: 30px;
+    }
+
+    .integrante{
+        min-width: 200px;
+        max-width: 200px;
+        height: 245px;
+        gap: 15px;
+        margin-left: 12px;
+    }
+
+    .integrante:hover{
+        height: 425px;
+        min-width: 250px;
+    }
+
+    .image-integrante{
+        max-width: 195px;
+        width: 100%;
+        border-radius: 20px;
+        transition: 1s;
+    }
+
+    .text{
+        font-size: 16px
     }
 }
