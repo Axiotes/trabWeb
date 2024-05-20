@@ -90,6 +90,7 @@
         top: 75px;
         padding: 20px;
         background-color: #9CA2D1;
+        border-radius: 10px;
         transition: 0.5s;
     }
 
