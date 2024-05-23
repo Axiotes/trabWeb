@@ -52,8 +52,8 @@
 }
 
 .integrante:hover{
-    height: 510px;
-    min-width: 280px;
+    height: 520px;
+    min-width: 290px;
     transform: scale(1.1);
     box-shadow: 3px 3px 5px black;
 
