@@ -1,0 +1,98 @@
+.main-galeria{
+    width: 100%;
+    height: 460%;
+}
+
+.titulo-image{
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.subtitulo{
+    width: 100%;
+    max-height: 150px;
+    height: 100%;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao{
+    width: 100%;
+    max-height: 520px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.sessao-reverse{
+    width: 100%;
+    max-height: 520px;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 30px 0 40px 0;
+}
+
+.text-titulo{
+    width: 100%;
+    height: 80%;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.text-titulo-reverse{
+    width: 100%;
+    height: 80%;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.titulo-sessao{
+    text-align: center;
+    font-size: 28px;
+}
+
+.text{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.image{
+    margin: 40px;
+}
+
+#marco-zero{
+    max-width: 770px;
+}
+
+#alto-da-se{
+    max-width: 680px;
+}
+
+#brennand{
+    max-width: 650px;
+}
+
+#mauro-shampoo{
+    max-width: 380px;
+}
