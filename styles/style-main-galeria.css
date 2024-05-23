@@ -1,6 +1,9 @@
 .main-galeria{
     width: 100%;
-    height: 460%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 
 .titulo-image{
@@ -14,6 +17,19 @@
     gap: 25px;
     font-size: 20px;
     font-weight: bold;
+    margin-top: 70px;
+}
+
+.pontos-turisticos{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.icones{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .subtitulo{
@@ -46,12 +62,11 @@
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin: 30px 0 40px 0;
 }
 
 .text-titulo{
     width: 100%;
-    height: 80%;
+    height: 400px;
     margin-right: 30px;
     display: flex;
     flex-direction: column;
@@ -60,7 +75,7 @@
 
 .text-titulo-reverse{
     width: 100%;
-    height: 80%;
+    height: 400px;
     margin-left: 30px;
     display: flex;
     flex-direction: column;
@@ -95,4 +110,163 @@
 
 #mauro-shampoo{
     max-width: 380px;
+}
+
+.feedback{
+    width: 100%;
+    max-height: 270px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 18px;
+    margin: 25px 0 50px 0;
+}
+
+.area-mensagem{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    transition: 1s;
+}
+
+.textarea{
+    max-width: 350px;
+    width: 100%;
+    height: 120px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+.btn-form{
+    max-width: 100px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 40px;
+    background-color: #2D3250;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1260px) {
+    .pontos-turisticos{
+        display: flex;
+        gap: 150px;
+        margin: 40px 0 70px 0;
+    }
+
+    .icones{
+        display: flex;
+        gap: 120px;
+    }
+
+    .sessao{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .sessao-reverse{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .image{
+        margin: 0;
+    }
+
+    #marco-zero{
+        max-width: 680px;
+    }
+    
+    #alto-da-se{
+        max-width: 590px;
+    }
+    
+    #brennand{
+        max-width: 560px;
+    }
+
+    #mauro-shampoo{
+        max-width: 340px;
+    }
+
+    .text-titulo{
+        margin: 0;
+    }
+
+    .text-titulo-reverse{
+        margin: 0;
+    }
+
+    .text{
+        margin: 25px;
+    }
+
+    .feedback{
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .titulo-image{
+        font-size: 16px;
+    }
+
+    .subtitulo{
+        font-size: 26px;
+    }
+
+    .pontos-turisticos{
+        display: flex;
+        gap: 50px;
+        margin: 0 0 70px 0;
+    }
+
+    .icones{
+        display: flex;
+        gap: 80px;
+    }
+
+    .titulo-sessao{
+        font-size: 23px;
+    }
+
+    #marco-zero{
+        max-width: 350px;
+    }
+    
+    #alto-da-se{
+        max-width: 350px;
+    }
+    
+    #brennand{
+        max-width: 340px;
+    }
+
+    #mauro-shampoo{
+        max-width: 260px;
+    }
+
+    #gildo{
+        max-width: 350px;
+    }
+
+    #chico-science{
+        max-width: 350px;
+    }
 }
