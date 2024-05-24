@@ -89,7 +89,7 @@
 
 .text{
     text-align: justify;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .image{
@@ -155,6 +155,27 @@
     color: white;
     font-size: 16px;
     cursor: pointer;
+}
+
+.esconder{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1.5s;
+    transform: translateX(100%);
+}
+
+.esconderReverse{
+    opacity: 0;
+    filter: blur(2px);
+    transition: all 1.5s;
+    transform: translateX(-100%);
+}
+
+.mostrar{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
+    transform: translateX(0);
 }
 
 @media screen and (max-width: 1260px) {
@@ -268,5 +289,9 @@
 
     #chico-science{
         max-width: 350px;
+    }
+
+    .textarea{
+        max-width: 280px;
     }
 }
