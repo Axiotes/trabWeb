@@ -23,7 +23,7 @@
 .pontos-turisticos{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 120px;
 }
 
 .icones{
@@ -181,13 +181,13 @@
 @media screen and (max-width: 1260px) {
     .pontos-turisticos{
         display: flex;
-        gap: 150px;
+        gap: 220px;
         margin: 40px 0 70px 0;
     }
 
     .icones{
         display: flex;
-        gap: 120px;
+        gap: 180px;
     }
 
     .sessao{
