@@ -21,15 +21,25 @@
                 <a id="opcao-selecionada" class="opcoes">Galeria de imagens</a>
                 <a href="/pages/login.html" class="opcoes">Entrar</a>
             </nav>
-        
+
+            <div class="tema">
+                <p id="mode">Change mode</p>
+                <div>
+                    <input type="checkbox" class="checkbox" id="check-mode">
+                    <label for="check-mode" class="label label-light">
+                        <div class="btn-label btn-label-light"></div>
+                    </label>
+                </div>
+            </div>
+            
             <button class="btn-menu-mobile" onclick="menuMobile()">
                 <img src="/images/menu-header.png">
             </button>
         </div>
         
         <nav id="menu-mobile" style="transform: scale(0);" class="container-opcao-mobile">
-            <a href="/pages/index.html" class="opcoes-mobile">Apresentação</a>
-            <a id="opcao-selecionada-mobile" class="opcoes-mobile">Galeria de imagens</a>
+            <a id="opcao-selecionada-mobile" class="opcoes-mobile">Apresentação</a>
+            <a href="/pages/galeria-de-imagens.html" class="opcoes-mobile">Galeria de imagens</a>
             <a href="/pages/login.html" class="opcoes-mobile">Entrar</a>
         </nav>
     </header>

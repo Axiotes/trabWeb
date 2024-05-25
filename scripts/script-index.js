@@ -10,31 +10,25 @@ function menuMobile() {
     }
 }
 
-let isDark = document.getElementById("btn-mode");
-let mode = document.getElementById("mode");
-const spaceBtn = document.querySelector(".space-btn");
-const btnClass = document.querySelector(".btn-class");
+const checkbox = document.getElementById("check-mode");
+const labelColor = document.querySelector(".label");
+const btnLabelColor = document.querySelector(".btn-label");
+const mode = document.getElementById("mode");
 
-isDark = false;
+function toggleMode() {
+    labelColor.classList.toggle("label-dark");
+    labelColor.classList.toggle("label-light");
+    btnLabelColor.classList.toggle("btn-label-dark");
+    btnLabelColor.classList.toggle("btn-label-light");
+}
 
-function trocarTema(){
-    isDark = !isDark;
+checkbox.addEventListener('change', () => {
+    localStorage.setItem("isDark", checkbox.checked);
+    let isDark = localStorage.getItem("isDark");
+
+    console.log("LocalStorage", isDark);
 
     if (isDark) {
-        mode.innerHTML = "Light mode"
-
-        spaceBtn.classList.add("posicao-btn-dark", "space-btn-dark");
-        btnClass.classList.add("btn-dark");
-
-        spaceBtn.classList.remove("posicao-btn-light", "space-btn-light");
-        btnClass.classList.remove("btn-light");
-    } else {
-        mode.innerHTML = "Dark mode"
-
-        spaceBtn.classList.add("posicao-btn-light", "space-btn-light");
-        btnClass.classList.add("btn-light");
-
-        spaceBtn.classList.remove("posicao-btn-dark", "space-btn-dark");
-        btnClass.classList.remove("btn-dark");
+        toggleMode();
     }
-}
+});
