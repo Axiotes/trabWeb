@@ -1,10 +1,17 @@
 .footer{
     width: 100%;
     height: 10%;
-    background-color: #7077A1;
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.footer-light{
+    background-color: #7077A1;
+}
+
+.footer-dark{
+    background-color: #242424;
 }
 
 .images-footer{

@@ -1,12 +1,19 @@
 .header{
     width: 100%;
-    background-color: #7077A1;
     height: 11%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
+}
+
+.header-light{
+    background-color: #7077A1;
+}
+
+.header-dark{
+    background-color: #242424;
 }
 
 .image-header{
@@ -38,7 +45,7 @@
     border-radius: 30px;
 }
 
-#opcao-selecionada{
+.opcao-selecionada{
     padding: 10px;
     background-color: #2D3250;
     border-radius: 30px;
@@ -72,6 +79,10 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+}
+
+#mode{
+    color: white;
 }
 
 .checkbox{

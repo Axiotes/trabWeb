@@ -12,6 +12,14 @@
     position: relative;
 }
 
+.titulo-page-light{
+    color: black;
+}
+
+.titulo-page-dark{
+    color: white;
+}
+
 .sessao-integrantes{
     display: flex;
     flex-direction: row;

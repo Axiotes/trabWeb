@@ -35,8 +35,15 @@ const btnLabelColor = document.querySelector(".btn-label");
 function toggleMode() {
     labelColor.classList.toggle("label-dark");
     labelColor.classList.toggle("label-light");
+
     btnLabelColor.classList.toggle("btn-label-dark");
     btnLabelColor.classList.toggle("btn-label-light");
+
+    header.classList.toggle("header-dark");
+    header.classList.toggle("header-light");
+
+    body.classList.toggle("back-color-light");
+    body.classList.toggle("back-color-dark");
 }
 
 function addMode() {

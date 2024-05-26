@@ -13,12 +13,29 @@ function menuMobile() {
 const checkbox = document.getElementById("check-mode");
 const labelColor = document.querySelector(".label");
 const btnLabelColor = document.querySelector(".btn-label");
+const header = document.querySelector(".header");
+const body = document.body;
+const footer = document.querySelector(".footer");
+const tituloPage = document.querySelector(".titulo-page");
 
 function toggleMode() {
     labelColor.classList.toggle("label-dark");
     labelColor.classList.toggle("label-light");
+
     btnLabelColor.classList.toggle("btn-label-dark");
     btnLabelColor.classList.toggle("btn-label-light");
+
+    header.classList.toggle("header-dark");
+    header.classList.toggle("header-light");
+
+    body.classList.toggle("back-color-light");
+    body.classList.toggle("back-color-dark");
+
+    footer.classList.toggle("footer-dark");
+    footer.classList.toggle("footer-light");
+
+    tituloPage.classList.toggle("titulo-page-dark");
+    tituloPage.classList.toggle("titulo-page-light");
 }
 
 function addMode() {
