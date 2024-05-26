@@ -31,7 +31,6 @@ textsReverse.forEach((textReverse) => observer.observe(textReverse));
 const checkbox = document.getElementById("check-mode");
 const labelColor = document.querySelector(".label");
 const btnLabelColor = document.querySelector(".btn-label");
-const mode = document.getElementById("mode");
 
 function toggleMode() {
     labelColor.classList.toggle("label-dark");
@@ -40,13 +39,23 @@ function toggleMode() {
     btnLabelColor.classList.toggle("btn-label-light");
 }
 
-checkbox.addEventListener('change', () => {
-    localStorage.setItem("isDark", checkbox.checked);
-    let isDark = localStorage.getItem("isDark");
+function addMode() {
+    let valueMode = localStorage.getItem("mode");
 
-    console.log("LocalStorage", isDark);
-
-    if (isDark) {
+    if (valueMode) {
+        checkbox.checked = true;
         toggleMode();
+    }
+}
+
+addMode();
+
+checkbox.addEventListener('change', () => {
+    toggleMode();
+
+    localStorage.removeItem("mode");
+
+    if (labelColor.classList.contains("label-dark")){
+        localStorage.setItem("mode", "dark");
     }
 });
