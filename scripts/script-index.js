@@ -1,3 +1,13 @@
+const checkbox = document.getElementById("check-mode");
+const labelColor = document.querySelector(".label");
+const btnLabelColor = document.querySelector(".btn-label");
+const header = document.querySelector(".header");
+const body = document.body;
+const footer = document.querySelector(".footer");
+const tituloPage = document.querySelector(".titulo-page");
+const opcoes = document.querySelectorAll(".opcoes");
+const opcoaoSelecionada = document.querySelector("#opcaoSelecionada");
+
 function menuMobile() {
     let menu = document.getElementById('menu-mobile');
 
@@ -9,14 +19,6 @@ function menuMobile() {
         menu.style.transform = "scale(0)";
     }
 }
-
-const checkbox = document.getElementById("check-mode");
-const labelColor = document.querySelector(".label");
-const btnLabelColor = document.querySelector(".btn-label");
-const header = document.querySelector(".header");
-const body = document.body;
-const footer = document.querySelector(".footer");
-const tituloPage = document.querySelector(".titulo-page");
 
 function toggleMode() {
     labelColor.classList.toggle("label-dark");
@@ -36,6 +38,14 @@ function toggleMode() {
 
     tituloPage.classList.toggle("titulo-page-dark");
     tituloPage.classList.toggle("titulo-page-light");
+
+    opcoes.forEach((element) => {
+        element.classList.toggle("opcoes-light");
+        element.classList.toggle("opcoes-dark");
+    });
+
+    opcoaoSelecionada.classList.toggle("opcao-selecionada-dark");
+    opcoaoSelecionada.classList.toggle("opcao-selecionada-light");
 }
 
 function addMode() {

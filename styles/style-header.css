@@ -35,19 +35,38 @@
 
 .opcoes{
     font-size: 20px;
-    color: white;
     transition: 0.5s;
 }
 
-.opcoes:hover{
+.opcoes-light{
+    color: white;
+}
+
+.opcoes-dark{
+    color: white;
+}
+
+.opcoes-light:hover{
     padding: 10px;
     background-color: #2D3250;
     border-radius: 30px;
 }
 
-.opcao-selecionada{
+.opcoes-dark:hover{
+    padding: 10px;
+    background-color: #7077A1;
+    border-radius: 30px;
+}
+
+.opcao-selecionada-light{
     padding: 10px;
     background-color: #2D3250;
+    border-radius: 30px;
+}
+
+.opcao-selecionada-dark{
+    padding: 10px;
+    background-color: #7077A1;
     border-radius: 30px;
 }
 

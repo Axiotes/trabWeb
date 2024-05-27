@@ -12,6 +12,8 @@ const subtitulo = document.querySelectorAll(".subtitulo");
 const tituloSessao = document.querySelectorAll(".titulo-sessao");
 const text = document.querySelectorAll(".text");
 const feedback = document.querySelector("#feedback");
+const opcoes = document.querySelectorAll(".opcoes");
+const opcoaoSelecionada = document.querySelector("#opcaoSelecionada");
 
 function menuMobile() {
     let menu = document.getElementById('menu-mobile');
@@ -48,6 +50,14 @@ function toggleMode() {
 
     header.classList.toggle("header-dark");
     header.classList.toggle("header-light");
+
+    opcoes.forEach((element) => {
+        element.classList.toggle("opcoes-light");
+        element.classList.toggle("opcoes-dark");
+    });
+
+    opcoaoSelecionada.classList.toggle("opcao-selecionada-dark");
+    opcoaoSelecionada.classList.toggle("opcao-selecionada-light");
 
     body.classList.toggle("back-color-light");
     body.classList.toggle("back-color-dark");
