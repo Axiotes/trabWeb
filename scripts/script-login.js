@@ -13,6 +13,9 @@ function menuMobile() {
 const checkbox = document.getElementById("check-mode");
 const labelColor = document.querySelector(".label");
 const btnLabelColor = document.querySelector(".btn-label");
+const header = document.querySelector(".header");
+const body = document.body;
+const footer = document.querySelector(".footer");
 
 function toggleMode() {
     labelColor.classList.toggle("label-dark");
@@ -26,6 +29,9 @@ function toggleMode() {
 
     body.classList.toggle("back-color-light");
     body.classList.toggle("back-color-dark");
+
+    footer.classList.toggle("footer-dark");
+    footer.classList.toggle("footer-light");
 }
 
 function addMode() {

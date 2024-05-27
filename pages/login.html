@@ -10,7 +10,7 @@
     <title>Trabalho AV2 - Login</title>
 </head>
 <body class="back-color-light">
-    <header class="header">
+    <header class="header header-light">
         <div class="container-header-desktop">
             <figure>
                 <img src="/images/image-header.png" class="image-header">
@@ -19,11 +19,11 @@
             <nav class="menu-desktop">
                 <a href="/index.html" class="opcoes">Apresentação</a>
                 <a href="/pages/galeria-de-imagens.html" class="opcoes">Galeria de imagens</a>
-                <a class="opcoes opcao-selecionada">Entrar</a>
+                <a class="opcoes opcao-selecionada" class="opcoes">Entrar</a>
             </nav>
 
             <div class="tema">
-                <p id="mode">Trocar tema</p>
+                <p id="mode" class="trocar-tema-light">Trocar tema</p>
                 <div>
                     <input type="checkbox" class="checkbox" id="check-mode">
                     <label for="check-mode" class="label label-light">
@@ -36,6 +36,13 @@
                 <img src="/images/menu-header.png">
             </button>
         </div>
+        
+        <nav id="menu-mobile" style="transform: scale(0);" class="container-opcao-mobile">
+            <a id="opcao-selecionada-mobile" class="opcoes-mobile">Apresentação</a>
+            <a href="/pages/galeria-de-imagens.html" class="opcoes-mobile">Galeria de imagens</a>
+            <a href="/pages/login.html" class="opcoes-mobile">Entrar</a>
+        </nav>
+    </header>
         
         <nav id="menu-mobile" style="transform: scale(0);" class="container-opcao-mobile">
             <a id="opcao-selecionada-mobile" class="opcoes-mobile">Apresentação</a>
@@ -68,7 +75,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer-light">
         <div class="images-footer">
             <img src="/images/image-js.png" id="javaScript">
             <img src="/images/image-html.png" id="html">
