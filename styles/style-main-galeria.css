@@ -3,7 +3,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 130px;
 }
 
 .letras-light{
@@ -31,13 +31,13 @@
 .pontos-turisticos{
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 150px;
 }
 
 .icones{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
 }
 
 .subtitulo{
@@ -79,6 +79,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 30px;
 }
 
 .text-titulo-reverse{
@@ -88,6 +89,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 30px;
 }
 
 .titulo-sessao{
@@ -187,15 +189,19 @@
 }
 
 @media screen and (max-width: 1260px) {
+    .main-galeria{
+        gap: 150px;
+    }
+
     .pontos-turisticos{
         display: flex;
-        gap: 220px;
+        gap: 300px;
         margin: 40px 0 70px 0;
     }
 
     .icones{
         display: flex;
-        gap: 180px;
+        gap: 230px;
     }
 
     .sessao{
@@ -249,9 +255,20 @@
     .feedback{
         margin-top: 80px;
     }
+
+    .container-mauro{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        margin-top: 40px;
+    }
 }
 
 @media screen and (max-width: 730px) {
+    .main-galeria{
+        gap: 120px;
+    }
+
     .titulo-image{
         font-size: 16px;
     }
@@ -262,13 +279,21 @@
 
     .pontos-turisticos{
         display: flex;
-        gap: 50px;
+        gap: 140px;
         margin: 0 0 70px 0;
     }
 
     .icones{
         display: flex;
-        gap: 80px;
+        gap: 140px;
+    }
+
+    .text-titulo{
+        gap: 0;
+    }
+
+    .text-titulo-reverse{
+        gap: 0;
     }
 
     .titulo-sessao{
@@ -301,5 +326,148 @@
 
     .textarea{
         max-width: 280px;
+    }
+
+    .container-marco-zero{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .container-alto-da-se{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    .container-brennand{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 80px;
+        margin-top: 40px;
+    }
+
+    .container-gildo{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .container-chico-science{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .container-mauro{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+        margin-top: 40px;
+    }
+
+    .text{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main-galeria{
+        gap: 160px;
+    }
+
+    .titulo-image{
+        font-size: 16px;
+    }
+
+    .subtitulo{
+        font-size: 26px;
+    }
+
+    .pontos-turisticos{
+        display: flex;
+        gap: 210px;
+        margin: 0 0 70px 0;
+    }
+
+    .icones{
+        display: flex;
+        gap: 220px;
+    }
+
+    .text-titulo{
+        gap: 0;
+    }
+
+    .text-titulo-reverse{
+        gap: 0;
+    }
+
+    .titulo-sessao{
+        font-size: 23px;
+    }
+
+    #marco-zero{
+        max-width: 350px;
+    }
+    
+    #alto-da-se{
+        max-width: 350px;
+    }
+    
+    #brennand{
+        max-width: 340px;
+    }
+
+    #mauro-shampoo{
+        max-width: 260px;
+    }
+
+    #gildo{
+        max-width: 350px;
+    }
+
+    #chico-science{
+        max-width: 350px;
+    }
+
+    .textarea{
+        max-width: 280px;
+    }
+
+    .container-marco-zero{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 100px;
+    }
+
+    .container-alto-da-se{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+
+    .container-brennand{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 150px;
+    }
+
+    .container-gildo{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .container-chico-science{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 60px;
+    }
+
+    .container-mauro{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
     }
 }
