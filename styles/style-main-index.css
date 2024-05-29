@@ -110,8 +110,8 @@
     }
 
     .integrante:hover{
-        height: 440px;
-        min-width: 275px;
+        height: 420px;
+        min-width: 255px;
 
         .image-integrante{
             max-width: 130px;
@@ -127,6 +127,6 @@
     }
 
     .text{
-        font-size: 16px
+        font-size: 13px
     }
 }
