@@ -60,18 +60,38 @@
     transition: 1s;
 }
 
+#neves:hover{
+    height: 445px;
+}
+
+#arthur:hover{
+    height: 430px;
+}
+
+#raul:hover{
+    height: 450px;
+}
+
+#barbosa:hover{
+    height: 465px;
+}
+
+#vini:hover{
+    height: 465px;
+}
+
 .integrante:hover{
-    height: 520px;
     min-width: 290px;
     transform: scale(1.1);
     box-shadow: 3px 3px 5px black;
 
     .nome{
-        font-size: 19px;
+        font-size: 18px;
     }
 
     .image-integrante{
         width: 100%;
+        max-width: 130px;
         margin: 15px 5px 0 5px;
     }
 }
@@ -102,7 +122,7 @@
     margin: 0 20px 20px 20px;
     overflow: hidden;
     color: white;
-    font-size: 17px;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 730px) {
@@ -115,6 +135,7 @@
     .carrossel{
         gap: 30px;
         padding: 0 40px 0 10px;
+        margin: 0 10px 0 10px;
     }
 
     .integrante{
@@ -125,12 +146,31 @@
         margin-left: 12px;
     }
 
+    #neves:hover{
+        height: 380px;
+    }
+    
+    #arthur:hover{
+        height: 365px;
+    }
+    
+    #raul:hover{
+        height: 380px;
+    }
+    
+    #barbosa:hover{
+        height: 400px;
+    }
+    
+    #vini:hover{
+        height: 398px;
+    }
+
     .integrante:hover{
-        height: 420px;
         min-width: 255px;
 
         .image-integrante{
-            max-width: 130px;
+            max-width: 100px;
             width: 100%;    
         }
     }
@@ -143,7 +183,7 @@
     }
 
     .text{
-        font-size: 13px
+        font-size: 14px
     }
 }
 
@@ -154,7 +194,8 @@
 
     .carrossel{
         height: 95%;
-        padding: 0 40px 0 10px;
+        padding: 0 40px 0 20px;
+        margin: 0 5px 0 5px;
     }
 
     .integrante{
@@ -167,9 +208,28 @@
         font-size: 20px;
     }
 
+    #neves:hover{
+        height: 360px;
+    }
+    
+    #arthur:hover{
+        height: 360px;
+    }
+    
+    #raul:hover{
+        height: 375px;
+    }
+    
+    #barbosa:hover{
+        height: 373px;
+    }
+    
+    #vini:hover{
+        height: 375px;
+    }
+
     .integrante:hover{
-        height: 385px;
-        min-width: 250px;
+        min-width: 230px;
         box-shadow: 3px 3px 5px black;
         gap: 5px;
     
@@ -179,6 +239,7 @@
     
         .image-integrante{
             width: 100%;
+            max-width: 100px;
             margin: 15px 5px 0 5px;
         }
     }
@@ -189,6 +250,6 @@
     }
 
     .text{
-        font-size: 12px
+        font-size: 13px
     }
 }
