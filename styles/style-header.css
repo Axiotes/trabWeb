@@ -36,13 +36,6 @@
 .opcoes{
     font-size: 20px;
     transition: 0.5s;
-}
-
-.opcoes-light{
-    color: white;
-}
-
-.opcoes-dark{
     color: white;
 }
 
@@ -85,6 +78,10 @@
     display: none;
 }
 
+#image-uninassau-dark{
+    width: 45px;
+}
+
 .container-opcao-mobile{
     display: none;
 }
@@ -100,7 +97,11 @@
     gap: 5px;
 }
 
-#mode{
+.tema-mobile{
+    display: none;
+}
+
+.mode{
     color: white;
 }
 
@@ -196,5 +197,19 @@
 
     #opcao-selecionada-mobile{
         color: #1e275e;
+    }
+
+    .tema{
+        display: none;
+    }
+
+    .tema-mobile{
+        max-width: 130px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
     }
 }

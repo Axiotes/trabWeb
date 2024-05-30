@@ -2,8 +2,9 @@ const images = document.querySelectorAll(".image");
 const texts = document.querySelectorAll(".text-titulo");
 const textsReverse = document.querySelectorAll(".text-titulo-reverse");
 const checkbox = document.getElementById("check-mode");
-const labelColor = document.querySelector(".label");
-const btnLabelColor = document.querySelector(".btn-label");
+const checkboxMobile = document.getElementById("check-mode-mobile");
+const labelColor = document.querySelectorAll(".label");
+const btnLabelColor = document.querySelectorAll(".btn-label");
 const header = document.querySelector(".header");
 const body = document.body;
 const footer = document.querySelector(".footer");
@@ -14,6 +15,8 @@ const text = document.querySelectorAll(".text");
 const feedback = document.querySelector("#feedback");
 const opcoes = document.querySelectorAll(".opcoes");
 const opcoaoSelecionada = document.querySelector("#opcaoSelecionada");
+const uninassauLight = document.querySelector("#image-uninassau-light");
+const uninassauDark = document.querySelector("#image-uninassau-dark");
 
 function menuMobile() {
     let menu = document.getElementById('menu-mobile');
@@ -24,6 +27,18 @@ function menuMobile() {
         menu.style.transform = "scale(1)";
     } else {
         menu.style.transform = "scale(0)";
+    }
+}
+
+function changeImage(){
+    let valueMode = localStorage.getItem("mode");
+
+    if (valueMode == "dark") {
+        uninassauLight.style.display = "block";
+        uninassauDark.style.display = "none";
+    } else {
+        uninassauLight.style.display = "none";
+        uninassauDark.style.display = "block";
     }
 }
 
@@ -42,11 +57,15 @@ texts.forEach((text) => observer.observe(text));
 textsReverse.forEach((textReverse) => observer.observe(textReverse));
 
 function toggleMode() {
-    labelColor.classList.toggle("label-dark");
-    labelColor.classList.toggle("label-light");
+    labelColor.forEach((element) => {
+        element.classList.toggle("label-dark");
+        element.classList.toggle("label-light");
+    });
 
-    btnLabelColor.classList.toggle("btn-label-dark");
-    btnLabelColor.classList.toggle("btn-label-light");
+    btnLabelColor.forEach((element) => {
+        element.classList.toggle("btn-label-dark");
+        element.classList.toggle("btn-label-light");
+    });
 
     header.classList.toggle("header-dark");
     header.classList.toggle("header-light");
@@ -90,8 +109,9 @@ function toggleMode() {
 function addMode() {
     let valueMode = localStorage.getItem("mode");
 
-    if (valueMode) {
+    if (valueMode == "dark") {
         checkbox.checked = true;
+        checkboxMobile.checked = true;
         toggleMode();
     }
 }
@@ -103,7 +123,21 @@ checkbox.addEventListener('change', () => {
 
     localStorage.removeItem("mode");
 
-    if (labelColor.classList.contains("label-dark")){
-        localStorage.setItem("mode", "dark");
-    }
+    labelColor.forEach((element) => {
+        if (element.classList.contains("label-dark")) {
+            localStorage.setItem("mode", "dark");
+        }
+    });
+});
+
+checkboxMobile.addEventListener('change', () => {
+    toggleMode();
+
+    localStorage.removeItem("mode");
+
+    labelColor.forEach((element) => {
+        if (element.classList.contains("label-dark")) {
+            localStorage.setItem("mode", "dark");
+        }
+    });
 });
