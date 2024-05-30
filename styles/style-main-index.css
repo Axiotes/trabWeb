@@ -10,6 +10,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 45px;
     width: 100%;
@@ -42,6 +43,7 @@
     gap: 50px;
     margin: 0 20px 0 20px;
     padding: 0 40px 0 10px;
+    scroll-behavior: smooth;
 }
 
 .carrossel::-webkit-scrollbar{
@@ -126,6 +128,33 @@
     font-size: 16px;
 }
 
+@media screen and (max-width: 1500px) {
+    .carrossel::-webkit-scrollbar{
+        display: block;
+    }
+
+    .carrossel::-webkit-scrollbar-track{
+        display: none;
+    }
+
+    .carrossel::-webkit-scrollbar-thumb{
+        background-color: #424769;
+        border-radius: 15px;
+    }
+
+    .carrossel::-webkit-scrollbar-corner{
+        display: none;
+    }
+
+    #neves{
+        margin-left: 10px;
+    }
+
+    #vini{
+        margin-right: 25px;
+    }
+}
+
 @media screen and (max-width: 730px) {
     .titulo-page{
         font-size: 30px;
@@ -135,6 +164,10 @@
         gap: 30px;
         padding: 0 40px 0 10px;
         margin: 0 10px 0 10px;
+    }
+
+    .carrossel::-webkit-scrollbar{
+        display: none;
     }
 
     .integrante{
@@ -203,23 +236,23 @@
     }
 
     #neves:hover{
-        height: 360px;
+        height: 380px;
     }
     
     #arthur:hover{
-        height: 360px;
+        height: 365px;
     }
     
     #raul:hover{
-        height: 375px;
+        height: 380px;
     }
     
     #barbosa:hover{
-        height: 373px;
+        height: 400px;
     }
     
     #vini:hover{
-        height: 375px;
+        height: 398px;
     }
 
     .integrante:hover{
