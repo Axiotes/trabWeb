@@ -8,8 +8,6 @@ const footer = document.querySelector(".footer");
 const tituloPage = document.querySelector(".titulo-page");
 const opcoes = document.querySelectorAll(".opcoes");
 const opcoaoSelecionada = document.querySelector("#opcaoSelecionada");
-const uninassauLight = document.querySelector("#image-uninassau-light");
-const uninassauDark = document.querySelector("#image-uninassau-dark");
 
 function menuMobile() {
     let menu = document.getElementById('menu-mobile');
@@ -53,18 +51,6 @@ function toggleMode() {
     opcoaoSelecionada.classList.toggle("opcao-selecionada-light");
 }
 
-function changeImage(){
-    let valueMode = localStorage.getItem("mode");
-
-    if (valueMode == "dark") {
-        uninassauLight.style.display = "block";
-        uninassauDark.style.display = "none";
-    } else {
-        uninassauLight.style.display = "none";
-        uninassauDark.style.display = "block";
-    }
-}
-
 function addMode() {
     let valueMode = localStorage.getItem("mode");
 
@@ -72,7 +58,6 @@ function addMode() {
         checkbox.checked = true;
         checkboxMobile.checked = true;
         toggleMode();
-        changeImage();
     }
 }
 
@@ -92,7 +77,6 @@ checkbox.addEventListener('change', () => {
 
 checkboxMobile.addEventListener('change', () => {
     toggleMode();
-    changeImage();
 
     localStorage.removeItem("mode");
 

@@ -15,8 +15,6 @@ const text = document.querySelectorAll(".text");
 const feedback = document.querySelector("#feedback");
 const opcoes = document.querySelectorAll(".opcoes");
 const opcoaoSelecionada = document.querySelector("#opcaoSelecionada");
-const uninassauLight = document.querySelector("#image-uninassau-light");
-const uninassauDark = document.querySelector("#image-uninassau-dark");
 
 function menuMobile() {
     let menu = document.getElementById('menu-mobile');
@@ -27,18 +25,6 @@ function menuMobile() {
         menu.style.transform = "scale(1)";
     } else {
         menu.style.transform = "scale(0)";
-    }
-}
-
-function changeImage(){
-    let valueMode = localStorage.getItem("mode");
-
-    if (valueMode == "dark") {
-        uninassauLight.style.display = "block";
-        uninassauDark.style.display = "none";
-    } else {
-        uninassauLight.style.display = "none";
-        uninassauDark.style.display = "block";
     }
 }
 
