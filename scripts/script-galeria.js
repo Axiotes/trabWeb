@@ -16,10 +16,9 @@ const feedback = document.querySelector("#feedback");
 const opcoes = document.querySelectorAll(".opcoes");
 const opcoaoSelecionada = document.querySelector("#opcaoSelecionada");
 
+// Função para mostrar ou esconder opções do menu mobile.
 function menuMobile() {
     let menu = document.getElementById('menu-mobile');
-
-    console.log(menu)
 
     if (menu.style.transform === 'scale(0)') {
         menu.style.transform = "scale(1)";
@@ -28,6 +27,7 @@ function menuMobile() {
     }
 }
 
+// Observer para verificar se o elemento está visível na tela e adicionar classe
 const observer = new IntersectionObserver( (elements) => {
     elements.forEach((element) => {
         if (element.isIntersecting){
@@ -38,10 +38,12 @@ const observer = new IntersectionObserver( (elements) => {
     });
 });
 
+// Observar elementos seleciondados
 images.forEach((image) => observer.observe(image));
 texts.forEach((text) => observer.observe(text));
 textsReverse.forEach((textReverse) => observer.observe(textReverse));
 
+// Função para trocar cores do tema
 function toggleMode() {
     labelColor.forEach((element) => {
         element.classList.toggle("label-dark");
@@ -92,6 +94,7 @@ function toggleMode() {
     feedback.classList.toggle("letras-dark");
 }
 
+// Função para verificar tema no LocalStorage e adicionar as configurações do tema
 function addMode() {
     let valueMode = localStorage.getItem("mode");
 
@@ -104,6 +107,7 @@ function addMode() {
 
 addMode();
 
+// Evento para verificar mudanças no input de tema e cadastrar ou remover as mudanças no LocalStorage (Desktop)
 checkbox.addEventListener('change', () => {
     toggleMode();
 
@@ -116,6 +120,7 @@ checkbox.addEventListener('change', () => {
     });
 });
 
+// Evento para verificar mudanças no input de tema e cadastrar ou remover as mudanças no LocalStorage (Mobile)
 checkboxMobile.addEventListener('change', () => {
     toggleMode();
 

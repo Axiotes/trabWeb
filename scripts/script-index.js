@@ -9,6 +9,7 @@ const tituloPage = document.querySelector(".titulo-page");
 const opcoes = document.querySelectorAll(".opcoes");
 const opcoaoSelecionada = document.querySelector("#opcaoSelecionada");
 
+// Função para mostrar ou esconder opções do menu mobile.
 function menuMobile() {
     let menu = document.getElementById('menu-mobile');
 
@@ -19,6 +20,7 @@ function menuMobile() {
     }
 }
 
+// Função para trocar cores do tema
 function toggleMode() {
     labelColor.forEach((element) => {
         element.classList.toggle("label-dark");
@@ -51,6 +53,7 @@ function toggleMode() {
     opcoaoSelecionada.classList.toggle("opcao-selecionada-light");
 }
 
+// Função para verificar tema no LocalStorage e adicionar as configurações do tema
 function addMode() {
     let valueMode = localStorage.getItem("mode");
 
@@ -63,6 +66,7 @@ function addMode() {
 
 addMode();
 
+// Evento para verificar mudanças no input de tema e cadastrar ou remover as mudanças no LocalStorage (Desktop)
 checkbox.addEventListener('change', () => {
     toggleMode();
 
@@ -75,6 +79,7 @@ checkbox.addEventListener('change', () => {
     });
 });
 
+// Evento para verificar mudanças no input de tema e cadastrar ou remover as mudanças no LocalStorage (Mobile)
 checkboxMobile.addEventListener('change', () => {
     toggleMode();
 

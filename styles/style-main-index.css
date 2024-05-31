@@ -183,7 +183,7 @@
     }
     
     #arthur:hover{
-        height: 365px;
+        height: 375px;
     }
     
     #raul:hover{
@@ -219,7 +219,7 @@
     }
 }
 
-@media screen and (max-height: 870px){
+@media screen and (max-height: 840px){
     .carrossel{
         padding: 0 40px 0 20px;
         margin: 0 5px 0 5px;
@@ -236,23 +236,23 @@
     }
 
     #neves:hover{
-        height: 380px;
+        height: 360px;
     }
     
     #arthur:hover{
-        height: 365px;
+        height: 360px;
     }
     
     #raul:hover{
-        height: 380px;
+        height: 360px;
     }
     
     #barbosa:hover{
-        height: 400px;
+        height: 365px;
     }
     
     #vini:hover{
-        height: 398px;
+        height: 360px;
     }
 
     .integrante:hover{
@@ -277,6 +277,6 @@
     }
 
     .text{
-        font-size: 13px
+        font-size: 12px
     }
 }
